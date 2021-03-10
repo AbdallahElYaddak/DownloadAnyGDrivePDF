@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Download Google Drive PDFs
 // @namespace    http://tampermonkey.net/
-// @updateURL    https://nikkidelrosso.com/userscripts/DLGDrivePDFs.js
+// @updateURL    https://github.com/AbdallahElYaddak/DownloadAnyGDrivePDF/blob/main/DLGDrivePDFs.js
 // @version      0.2
 // @description  try to take over the world!
 // @author       Abdallah Khaled El-Yaddak
