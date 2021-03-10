@@ -1,4 +1,4 @@
-# DownloadAnyGDrivePDF
+# Download Any Google Drive PDF
 Enables the download button for any PDF file on Google drive.
 
 ## Installation
