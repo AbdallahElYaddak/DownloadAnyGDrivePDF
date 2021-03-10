@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @updateURL    https://github.com/AbdallahElYaddak/DownloadAnyGDrivePDF/blob/main/DLGDrivePDFs.js
 // @version      0.2
-// @description  try to take over the world!
+// @description  Enables the download button for PDF files on Google drive.
 // @author       Abdallah Khaled El-Yaddak
 // @match        https://drive.google.com/file/d/*
 // ==/UserScript==
