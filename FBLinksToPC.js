@@ -19,6 +19,5 @@ if (window.location.href.indexOf("m.facebook.com")>-1){
             a = a.replace("https://m.facebook.com/", "https://www.facebook.com/");
             window.location.replace(a);
         }
-
     }
 }
