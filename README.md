@@ -12,5 +12,5 @@
 Enables the download button for any PDF file on Google drive.
 #### Known Issues
 The PDF tab MUST be active wile the code works. You can not move to ther tabs while it is scrolling through the PDF.
-### Turn moblie Facebook links to desktop links. [Source](/FBLinksToPC.js)
+### Turn mobile Facebook links to desktop links [Source](/FBLinksToPC.js)
 Useful when you open FB links sent from a mobile on a PC.
