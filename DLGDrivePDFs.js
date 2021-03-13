@@ -16,29 +16,8 @@ document.addEventListener('readystatechange', event => {
     if (event.target.readyState === "complete") {
         verboseLog('Page loaded!');
         CheckDownloadBtn();
-        //addButton();
     };
 });
-
-// async function addButton() {
-//     let b = CheckDownloadBtn();
-//     log(b);
-//     if (b != null) {
-//         var sidebar = b.parentElement.parentElement;
-//         let n = sidebar.childElementCount
-//         var button = sidebar;
-//         var a = button;
-//         button = sidebar.children[n-2].cloneNode(true);
-//         sidebar.prepend(button);
-//         button.setAttribute('href', 'javascript:void(0);');
-//         button.setAttribute('data-tooltip', 'Download');
-//         button.setAttribute('aria-label', 'Download');
-//         a = button.getElementsByTagName('div')[0];
-//         a.setAttribute('class', 'ndfHFb-c4YZDc-Bz112c ndfHFb-c4YZDc-C7uZwb-LgbsSe-Bz112c ndfHFb-c4YZDc-nupQLb-Bz112c');
-//         button.addEventListener('click', downloadPDF);
-//         log('Button added!');
-//     };
-// };
 
 async function loadImg(img,pdf){
         img.scrollIntoView();
@@ -50,7 +29,7 @@ async function loadImg(img,pdf){
         let imgData = can.toDataURL("image/jpeg", 1.0);
         pdf.addImage(imgData, 'JPEG', 0, 0);
         pdf.addPage();
-}
+};
 
 function sleepFor(sec) {
     return new Promise(resolve => {
@@ -58,7 +37,7 @@ function sleepFor(sec) {
             resolve("Woke up!");
         }, sec * 1000);
     });
-}
+};
 
 async function downloadPDF () {
     let n = document.getElementsByClassName("ndfHFb-c4YZDc-DARUcf-NnAfwf-j4LONd")[0].innerText;
@@ -76,10 +55,10 @@ async function downloadPDF () {
         pdf.addImage(imgData, 'JPEG', 0, 0);
         pdf.addPage();
         verboseLog('Imgage ' + i.toString() + " / " + n.toString() + " added...");
-    }
+    };
     let s = document.getElementsByClassName("ndfHFb-c4YZDc-Wrql6b-V1ur5d")[0].innerText;
     pdf.save(s);
-}
+};
 
 function CheckDownloadBtn(){
     verboseLog('Checking if Download Button is available...');
@@ -89,7 +68,7 @@ function CheckDownloadBtn(){
         let btn = elements[i];
         if (btn.getAttribute('aria-label') == 'PDF icon') {
             b = true
-        }
+        };
         if (btn.getAttribute('aria-label') == 'Download' && b) {
             //             log(btn);
             if (btn.getAttribute('aria-hidden') == 'true'){
@@ -109,15 +88,15 @@ function CheckDownloadBtn(){
             }else{
                 verboseLog('Download Button is already enabled');
                 return null;
-            }
+            };
         } else if(btn.getAttribute('aria-label') == 'More actions'){
             verboseLog('Download Button is missing',"error");
             verboseLog('Please send the PDF link to the script author',"error");
             return btn;
-        }
-    }
+        };
+    };
 
-}
+};
 
 function log(message, type) {
     if (debuggingMode == 0) {
