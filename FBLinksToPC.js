@@ -13,7 +13,7 @@ if (window.location.href.indexOf("m.facebook.com")>-1){
         var a = window.location.href;
         if (a.includes("story.php?")){
             var p2 = a.substring(a.search('story_fbid='), a.search('&'))
-            var p1 = a.substring(a.search('&id=')+1,getPosition(a,"?",2))
+            var p1 = a.substring(a.search('&id=')+1,a.split("?", 2).join("?").length)
             window.location.replace("https://www.facebook.com/story.php?" + p1 + "&" + p2)
         } else {
             a = a.replace("https://m.facebook.com/", "https://www.facebook.com/");
@@ -21,7 +21,4 @@ if (window.location.href.indexOf("m.facebook.com")>-1){
         }
 
     }
-}
-function getPosition(string, subString, index) {
-    return string.split(subString, index).join(subString).length;
 }
