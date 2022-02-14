@@ -2,7 +2,7 @@
 // @name         Remove rooms & stories
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  try to take over the world!
+// @description  Remove FB Stories & VideoRooms
 // @author       You
 // @match        https://www.facebook.com/?ref=home
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=facebook.com
